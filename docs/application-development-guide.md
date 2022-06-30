@@ -1810,14 +1810,14 @@ See [How to spawn a Workflow Execution in Java](#start-workflow-execution) for d
 </TabItem>
 <TabItem value="php">
 
-The following example represents a console command that starts a workflow, prints its IDs, and then waits for its result:
+The following example represents a console command that starts a Workflow, prints its IDs, and then waits for its result:
 
 <!--SNIPSTART php-hello-client {"enable_source_link": true}-->
 <!--SNIPEND-->
 
-In the snippet above we use `WorkflowClientInterface` - an entry point to get access to Workflows.
-Once you need to create, retrieve, or start a workflow you should use an instance of `WorkflowClientInterface`.
-Here we create an instance of `GreetingWorkflowInterface` with execution timeout of 1 minute.
+The `WorkflowClientInterface` in the snippet is an entry point to get access to Workflow.
+Use an instance of `WorkflowClientInterface` to create, retrieve, or start a Workflow .
+Here we create an instance of `GreetingWorkflowInterface` with a Workflow Execution Timeout of 1 minute.
 
 Then we print some information and start the Workflow.
 
@@ -3168,7 +3168,7 @@ Things to consider when defining Signals:
 </TabItem>
 <TabItem value="php">
 
-Workflows can also answer synchronous [Queries](/php/queries) and receive [Signals](/php/signals).
+Workflows can answer synchronous [Queries](/php/queries) and receive [Signals](/php/signals).
 
 All interface methods must have one of the following annotations:
 
@@ -3217,6 +3217,8 @@ In the above code the `#[WorkflowMethod(name)]` is not specified, thus the Workf
 
 </TabItem>
 <TabItem value="typescript">
+
+update dfkjsf
 
 [`defineSignal`](https://typescript.temporal.io/api/namespaces/workflow/#definesignal)
 
@@ -3669,7 +3671,9 @@ Note that the Signal handler "setCustomer" is executed before the `@WorkflowMeth
 </TabItem>
 <TabItem value="php">
 
-You may not know if a Workflow is running and can accept a signal. The `WorkflowClient`->`startWithSignal` API allows you to send a Signal to the current Workflow instance if one exists or to create a new run and then send the Signal.
+In cases where you may not know if a Workflow is running, and want to send a Signal to it, use `startwithSignal`.
+If a running Workflow exists, the `startwithSignal` API sends the Signal.
+If there is no running Workflow, the API starts a new Workflow Run and delivers the Signal to it.
 
 ```php
 $workflow = $workflowClient->newWorkflowStub(MyWorkflow::class);
@@ -3749,7 +3753,7 @@ Query methods must never change any Workflow state including starting Activities
 </TabItem>
 <TabItem value="php">
 
-Workflows can also answer synchronous [Queries](/php/queries) and receive [Signals](/php/signals).
+Workflows can answer synchronous [Queries](/php/queries) and receive [Signals](/php/signals).
 
 All interface methods must have one of the following annotations:
 
@@ -4112,9 +4116,9 @@ class MyWorkflow
 }
 ```
 
-You can also issue a query from code using the `QueryWorkflow()` API on a Temporal client object.
+You can also issue a Query from code using the `QueryWorkflow()` API on a Temporal Client object.
 
-Use `WorkflowStub` to Query Workflow instances from your Client code (can be applied to running Workflows as well):
+Use `WorkflowStub` to Query Workflow instances from your Client code (can be applied to both running and closed Workflows):
 
 ```php
 $workflow = $workflowClient->newWorkflowStub(
@@ -4290,7 +4294,7 @@ YourWorkflowInterface workflow1 =
 </TabItem>
 <TabItem value="php">
 
-`workflowRuntTimeout` runs timeout limits duration of a single Workflow invocation.
+`WorkflowRunTimeout` runs timeout limits duration of a single Workflow invocation.
 
 ```php
 $workflow = $this->workflowClient->newWorkflowStub(
@@ -4528,7 +4532,7 @@ Note that if you define options per-Activity Type options with `WorkflowImplemen
 <TabItem value="php">
 
 Because Activities are reentrant, only a single stub can be used for multiple Activity invocations.
-The follow code creates an Activity with a `ScheduleToCloseTimeout` set to 2 seconds.
+The following code creates an Activity with a `ScheduleToCloseTimeout` set to 2 seconds.
 
 ```php
 $this->greetingActivity = Workflow::newActivityStub(
@@ -4639,7 +4643,7 @@ Note that if you define options per-Activity Type options with `WorkflowImplemen
 <TabItem value="php">
 
 Because Activities are reentrant, only a single stub can be used for multiple Activity invocations.
-The follow code creates an Activity with a `ScheduleToStartTimeout` set to 2 seconds.
+The following code creates an Activity with a `StartToCloseTimeout` set to 2 seconds.
 
 ```php
 $this->greetingActivity = Workflow::newActivityStub(
@@ -4747,7 +4751,7 @@ Note that if you define options per-Activity Type options with `WorkflowImplemen
 <TabItem value="php">
 
 Because Activities are reentrant, only a single stub can be used for multiple Activity invocations.
-The follow code creates an Activity with a `ScheduleToStartTimeout` set to 10 seconds.
+The following code creates an Activity with a `ScheduleToStartTimeout` set to 10 seconds.
 
 ```php
 // Creating a stub for the activity.

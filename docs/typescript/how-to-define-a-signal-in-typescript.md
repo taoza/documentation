@@ -9,6 +9,8 @@ tags:
   - typescript
 ---
 
+dfkjsf
+
 [`defineSignal`](https://typescript.temporal.io/api/namespaces/workflow/#definesignal)
 
 ```ts

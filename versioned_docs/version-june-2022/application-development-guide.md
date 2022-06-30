@@ -2890,6 +2890,10 @@ MySignal struct {
 }
 ```
 
+##### testh5
+
+go contetn here'
+
 </TabItem>
 <TabItem value="java">
 
@@ -2924,6 +2928,8 @@ Content is not available
 </TabItem>
 <TabItem value="typescript">
 
+testd
+
 [`defineSignal`](https://typescript.temporal.io/api/namespaces/workflow/#definesignal)
 
 ```ts
@@ -2936,6 +2942,13 @@ interface JoinInput {
 
 const joinSignal = defineSignal<JoinInput>("join");
 ```
+
+##### testh5
+
+contetn here'
+sdlfkj
+asdfkjsdf
+lkjsdflskdj
 
 </TabItem>
 </Tabs>
