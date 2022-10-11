@@ -1037,6 +1037,8 @@ The desired clientside usage would look something like this:
 ```ts
 // client.ts
 const handle = await client.start(MyScheduleWorkflow, {
+
+  
   args: [
     {
       cronParser: {
