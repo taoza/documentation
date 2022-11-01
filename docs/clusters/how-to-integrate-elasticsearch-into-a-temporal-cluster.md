@@ -24,9 +24,10 @@ If you operate a Temporal Cluster using our [Helm charts](https://github.com/tem
 
 :::note Supported versions
 
+- Elasticsearch v8 is supported from Temporal version 1.18.0 onwards
 - Elasticsearch v7.10 is supported from Temporal version 1.7.0 onwards
-- Elasticsearch v6.8 is supported in all Temporal versions
-- Both versions are explicitly supported with AWS Elasticsearch
+- Elasticsearch v6.8 is supported up to Temporal version 1.17.x
+- Elasticsearch v6.8 and v7.10 versions are explicitly supported with AWS Elasticsearch
 
 :::
 
@@ -91,23 +92,7 @@ Ensure that the following privileges are granted for the Elasticsearch Temporal 
 #### Add custom Search Attributes (optional)
 
 This step is optional.
+
 Here we are adding custom Search Attributes to your Cluster.
 
-Run the following `tctl` command to add the `ProductId` custom Search Attribute to the Temporal Cluster (and Elasticsearch Temporal index):
-
-```bash
-tctl admin cluster add-search-attributes --name ProductId --type Keyword
-```
-
-Run the following `tctl` command to add custom Search Attributes used by samples and SDK integration tests:
-
-```bash
-tctl --auto_confirm admin cluster add-search-attributes \
-    --name CustomKeywordField --type Keyword \
-    --name CustomStringField --type Text \
-    --name CustomTextField --type Text \
-    --name CustomIntField --type Int \
-    --name CustomDatetimeField --type Datetime \
-    --name CustomDoubleField --type Double \
-    --name CustomBoolField --type Bool
-```
+Run the following command to create search attributes: `tctl search-attribute create`

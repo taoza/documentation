@@ -4,6 +4,14 @@ title: Activities in PHP
 sidebar_label: Activities
 ---
 
+:::info Try the Developer's guide
+
+The majority of this information has moved into the [Developer's guide](/application-development/?lang=php).
+
+However, if you can't find what you are looking for there, we recommend checking this doc set as well.
+
+:::
+
 ## Activity interface
 
 An Activity is a manifestation of a particular Task in the business logic.

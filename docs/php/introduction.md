@@ -4,6 +4,14 @@ title: PHP SDK introduction
 sidebar_label: PHP SDK introduction
 ---
 
+:::info Try the Developer's guide
+
+The majority of this information has moved into the [Developer's guide](/application-development/?lang=php).
+
+However, if you can't find what you are looking for there, we recommend checking this doc set as well.
+
+:::
+
 ## Quick start
 
 1. Clone the [Temporal PHP SDK](https://github.com/temporalio/sdk-php) or add it as dependency to your project using a dependency management tool like composer:

@@ -2,15 +2,14 @@
 id: get-started-intro
 title: Get started with Temporal Cloud
 sidebar_label: Get started
-description: Create an account, get certificates, create a Namespace, and invite users.
+description: Create an account, issue certificates, create a Namespace, invite users, and connect.
 tags:
-  - how-to
+  - guide-context
 ---
 
-:::note Join the Temporal Cloud waitlist
+:::note Sign up for Temporal Cloud
 
-Access to Temporal Cloud is currently by invitation only.
-You can [join the waitlist](https://pages.temporal.io/cloud-early-access).
+To request a Temporal Cloud account, complete the [request form](https://pages.temporal.io/cloud-request-access).
 
 :::
 
@@ -26,3 +25,4 @@ To get started with Temporal Cloud, follow these onboarding steps:
 1. [Issue CA certificates](#issue-ca-certificates).
 1. [Create a Namespace](#create-a-namespace).
 1. [Invite users](#invite-users).
+1. [Connect to Temporal Cloud](#connect-to-temporal-cloud).
