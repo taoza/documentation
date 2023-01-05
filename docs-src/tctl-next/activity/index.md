@@ -1,13 +1,13 @@
 ---
 id: index
-title: tctl activity
+title: temporal activity
 sidebar_label: activity
-description: How to operate Activity Executions using tctl.
+description: How to operate Activity Executions using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl activity` commands enable [Activity Execution](/concepts/what-is-an-activity-execution) operations.
+The `temporal activity` commands enable [Activity Execution](/concepts/what-is-an-activity-execution) operations.
 
-- [tctl activity complete](/tctl-next/activity#complete)
-- [tctl activity fail](/tctl-next/activity#fail)
+- [temporal activity complete](/tctl-next/activity#complete)
+- [temporal activity fail](/tctl-next/activity#fail)
