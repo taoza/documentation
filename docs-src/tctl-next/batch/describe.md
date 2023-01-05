@@ -1,10 +1,10 @@
 ---
 id: describe
-title: tctl batch describe
+title: temporal batch describe
 sidebar_label: describe
-description: How to describe the progress of a batch job using tctl.
+description: How to describe the progress of a batch job using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
 The `tctl batch describe` command describes the progress of a batch job.

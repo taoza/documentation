@@ -9,13 +9,17 @@ tags:
 
 The `temporal activity complete` command completes an [Activity Execution](/concepts/what-is-an-activity-execution).
 
-`temporal activity complete <modifiers>`
+`temporal activity complete [command options] [arguments...]`
 
-The following modifiers are supported and control the behavior of the command.
-Always include required modifiers when executing this command.
+This command supports the following options.
+The main options are listed below:
 
 - [--activity-id](/tctl-next/modifiers#--activity-id)
 - [--identity](/tctl-next/modifiers#--identity)
 - [--reason](/tctl-next/modifiers#--reason)
 - [--run-id](/tctl-next/modifiers#--run-id)
 - [--workflow-id](/tctl-next/modifiers#--workflow-id)
+
+Additional options include the following client and display options.
+
+<!-- todo: add client and display options -->
