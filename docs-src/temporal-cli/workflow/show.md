@@ -1,15 +1,15 @@
 ---
 id: show
-title: tctl workflow show
+title: temporal workflow show
 sidebar_label: show
-description: How to show Workflow History using tctl.
+description: How to show Workflow History using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow show` command shows the [Event History](/concepts/what-is-an-event-history) for the specified [Workflow Execution](/concepts/what-is-a-workflow-execution).
+The `temporal workflow show` command shows the [Event History](/concepts/what-is-an-event-history) for the specified [Workflow Execution](/concepts/what-is-a-workflow-execution).
 
-`tctl workflow show <modifiers>`
+`temporal workflow show <modifiers>`
 
 The following modifiers control the behavior of the command.
 

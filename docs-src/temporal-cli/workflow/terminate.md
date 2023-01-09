@@ -1,23 +1,23 @@
 ---
 id: terminate
-title: tctl workflow terminate
+title: temporal workflow terminate
 sidebar_label: terminate
-description: How to terminate a Workflow Execution using tctl.
+description: How to terminate a Workflow Execution using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow terminate` command terminates a [Workflow Execution](/concepts/what-is-a-workflow-execution).
+The `temporal workflow terminate` command terminates a [Workflow Execution](/concepts/what-is-a-workflow-execution).
 If `run_id` is not specified, the command terminates the last Workflow Execution with the specified `workflow_id`.
 
 Terminating a running Workflow Execution records a `WorkflowExecutionTerminated` event as the closing event in the History.
 No more command tasks will be scheduled.
 
-See also [`tctl workflow cancel`](/temporal-cli/workflow#cancel).
+See also [`temporal workflow cancel`](/temporal-cli/workflow#cancel).
 
-The use of the [`--query` modifier](/temporal-cli/modifiers#--query) (`tctl workflow terminate --query ...`) automatically starts a [batch job](/temporal-cli/batch) that Terminates Workflow Executions according to the List Filter provided.
+The use of the [`--query` modifier](/temporal-cli/modifiers#--query) (`temporal workflow terminate --query ...`) automatically starts a [batch job](/temporal-cli/batch) that Terminates Workflow Executions according to the List Filter provided.
 
-`tctl workflow terminate --query <value> <modifiers>`
+`temporal workflow terminate --query <value> <modifiers>`
 
 The following modifiers are supported and control the behavior of the command.
 Always include required modifiers when executing this command.

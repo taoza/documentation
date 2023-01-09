@@ -1,16 +1,16 @@
 ---
 id: start
-title: tctl workflow start
+title: temporal workflow start
 sidebar_label: start
-description: How to start a new Workflow Execution using tctl.
+description: How to start a new Workflow Execution using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow start` command starts a new [Workflow Execution](/concepts/what-is-a-workflow-execution).
+The `temporal workflow start` command starts a new [Workflow Execution](/concepts/what-is-a-workflow-execution).
 This command returns the Workflow Id and Run Id immediately after starting the Workflow.
 
-`tctl workflow start <modifiers>`
+`temporal workflow start <modifiers>`
 
 The following modifiers control the behavior of the command.
 Always include required modifiers when executing this command.

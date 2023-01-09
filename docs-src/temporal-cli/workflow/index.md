@@ -1,24 +1,24 @@
 ---
 id: index
-title: tctl workflow
+title: temporal workflow
 sidebar_label: workflow
-description: How to operate Workflow Executions using tctl.
+description: How to operate Workflow Executions using Temporal CLi.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow` commands enable [Workflow Execution](/concepts/what-is-a-workflow-execution) operations.
+The `temporal workflow` commands enable [Workflow Execution](/concepts/what-is-a-workflow-execution) operations.
 
-- [tctl workflow cancel](/temporal-cli/workflow#cancel)
-- [tctl workflow count](/temporal-cli/workflow#count)
-- [tctl workflow describe](/temporal-cli/workflow#describe)
-- [tctl workflow list](/temporal-cli/workflow#list)
-- [tctl workflow query](/temporal-cli/workflow#query)
-- [tctl workflow reset](/temporal-cli/workflow#reset)
-- [tctl workflow reset-batch](/temporal-cli/workflow#reset-batch)
-- [tctl workflow scan](/temporal-cli/workflow#scan)
-- [tctl workflow show](/temporal-cli/workflow#show)
-- [tctl workflow signal](/temporal-cli/workflow#signal)
-- [tctl workflow stack](/temporal-cli/workflow#stack)
-- [tctl workflow start](/temporal-cli/workflow#start)
-- [tctl workflow terminate](/temporal-cli/workflow#terminate)
+- [temporal workflow cancel](/temporal-cli/workflow#cancel)
+- [temporal workflow count](/temporal-cli/workflow#count)
+- [temporal workflow describe](/temporal-cli/workflow#describe)
+- [temporal workflow list](/temporal-cli/workflow#list)
+- [temporal workflow query](/temporal-cli/workflow#query)
+- [temporal workflow reset](/temporal-cli/workflow#reset)
+- [temporal workflow reset-batch](/temporal-cli/workflow#reset-batch)
+- [temporal workflow scan](/temporal-cli/workflow#scan)
+- [temporal workflow show](/temporal-cli/workflow#show)
+- [temporal workflow signal](/temporal-cli/workflow#signal)
+- [temporal workflow stack](/temporal-cli/workflow#stack)
+- [temporal workflow start](/temporal-cli/workflow#start)
+- [temporal workflow terminate](/temporal-cli/workflow#terminate)

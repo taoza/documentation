@@ -1,17 +1,17 @@
 ---
 id: create
-title: tctl schedule create
+title: temporal schedule create
 sidebar_label: create
-description: How to create a Schedule using tctl.
+description: How to create a Schedule using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-With tctl, create a Schedule like this:
+With Temporal CLI, create a Schedule like this:
 
 ```shell
-$ tctl config set version next   # ensure you're using the new tctl
-$ tctl schedule create \
+$ temporal env set version next   # ensure you're using the new temporal
+$ temporal schedule create \
     --sid 'your-schedule-id' \
     --interval '5h/15m' \
     --cal '{"dayOfWeek":"Fri","hour":"11","minute":"3"}' \
@@ -29,7 +29,7 @@ If they would otherwise overlap, they are buffered to run sequentially.
 You can also use traditional cron strings, including all features that are supported by `CronSchedule` today, such as `@weekly` and other shorthands, `@every`, and `CRON_TZ`.
 
 ```shell
-$ tctl schedule create \
+$ temporal schedule create \
     --sid 'your-schedule-id' \
     --cron '3 11 * * Fri' \
     --wid 'your-workflow-id' \
@@ -40,4 +40,4 @@ $ tctl schedule create \
 Any combination of `--cal`, `--interval`, and `--cron` is supported and Actions will happen at any of the specified times.
 If you use both `--time-zone` and also `CRON_TZ`, they must agree.
 
-See `tctl schedule create --help` for the full set of available options.
+See `temporal schedule create --help` for the full set of available options.

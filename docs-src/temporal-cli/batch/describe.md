@@ -7,9 +7,9 @@ tags:
   - cli
 ---
 
-The `tctl batch describe` command describes the progress of a batch job.
+The `temporal batch describe` command describes the progress of a batch job.
 
-`tctl batch describe --job-id <value> <modifiers>`
+`temporal batch describe [command options] [arguments...]`
 
 The following modifiers are supported and control the behavior of the command.
 Always include required modifiers when executing this command.

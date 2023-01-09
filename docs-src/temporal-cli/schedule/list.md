@@ -1,14 +1,14 @@
 ---
 id: list
-title: tctl schedule list
+title: temporal schedule list
 sidebar_label: list
-description: How to list Schedules using tctl
+description: How to list Schedules using Temporal CLI
 tags:
-  - tctl
+  - cli
 ---
 
 ```shell
-tctl schedule list
+temporal schedule list
 ```
 
 Note that if you're using Standard Visibility, listing Schedules will currently only include Schedule Ids and no other information.

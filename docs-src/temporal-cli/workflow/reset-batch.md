@@ -1,17 +1,17 @@
 ---
 id: reset-batch
-title: tctl workflow reset-batch
+title: temporal workflow reset-batch
 sidebar_label: reset-batch
-description: How to reset a batch of Workflow Executions using tctl.
+description: How to reset a batch of Workflow Executions using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow reset-batch` command resets a batch of [Workflow Executions](/concepts/what-is-a-workflow-execution) by [`resetType`](#resettype).
+The `temporal workflow reset-batch` command resets a batch of [Workflow Executions](/concepts/what-is-a-workflow-execution) by [`resetType`](#resettype).
 
 Resetting a Workflow allows the process to be resumed from a certain point without losing your parameters or Event History.
 
-`tctl workflow reset-batch <modifiers>`
+`temporal workflow reset-batch <modifiers>`
 
 The following modifiers control the behavior of the command.
 

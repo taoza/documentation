@@ -1,15 +1,15 @@
 ---
 id: delete
-title: tctl workflow delete
+title: temporal workflow delete
 sidebar_label: delete
-description: Delete a Workflow using tctl.
+description: Delete a Workflow using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow delete` command deletes a [Workflow Execution](/concepts/what-is-a-workflow-execution).
+The `temporal workflow delete` command deletes a [Workflow Execution](/concepts/what-is-a-workflow-execution).
 
-`tctl workflow delete`
+`temporal workflow delete`
 
 The following modifiers are supported and control the behavior of the command.
 Always include required modifiers when executing this command.

@@ -1,18 +1,18 @@
 ---
 id: query
-title: tctl workflow query
+title: temporal workflow query
 sidebar_label: query
-description: How to send a Query to a Workflow Execution using tctl.
+description: How to send a Query to a Workflow Execution using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow query` command sends a [Query](/concepts/what-is-a-query) to a [Workflow Execution](/concepts/what-is-a-workflow-execution).
+The `temporal workflow query` command sends a [Query](/concepts/what-is-a-query) to a [Workflow Execution](/concepts/what-is-a-workflow-execution).
 
 Queries can be used to retrieve all or part of the Workflow state with given parameters.
 
 ```bash
-$ tctl workflow query --workflow-id "HelloQuery" --query-type "getCount"
+$ temporal workflow query --workflow-id "HelloQuery" --query-type "getCount"
 Query result as JSON:
 3
 ```
@@ -21,16 +21,16 @@ Queries can also be used on completed Workflows.
 Let's complete a Workflow by updating its greeting, and then query the now-finished Workflow.
 
 ```bash
-$ tctl workflow signal --workflow-id "HelloQuery" --name "updateGreeting" --input \"Bye\"
+$ temporal workflow signal --workflow-id "HelloQuery" --name "updateGreeting" --input \"Bye\"
 Signal workflow succeeded.
-$ tctl workflow query --workflow-id "HelloQuery" --query-type "getCount"
+$ temporal workflow query --workflow-id "HelloQuery" --query-type "getCount"
 Query result as JSON:
 4
 ```
 
 Queries are written as follows:
 
-`tctl workflow query --workflow-id [modifiers]`
+`temporal workflow query --workflow-id [modifiers]`
 
 The following modifiers control the behavior of the command.
 Always include required modifiers when executing this command.

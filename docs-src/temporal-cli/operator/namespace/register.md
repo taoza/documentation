@@ -7,17 +7,15 @@ tags:
   - cli
 ---
 
-The `tctl namespace register` command registers a [Namespace](/concepts/what-is-a-namespace).
+The `temporal operator namespace register` command registers a [Namespace](/concepts/what-is-a-namespace).
 
-`tctl namespace register`
+`temporal operator namespace register`
 
 By default, Temporal uses a "default" Namespace.
 Create and register a new Namespace with the following command:
 
 ```bash
-tctl --namespace your-namespace namespace register
-# OR using short alias
-tctl --ns your-namespace n re
+temporal operator namespace register your-namespace
 ```
 
 The following modifiers are supported and control the behavior of the command.

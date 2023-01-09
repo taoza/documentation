@@ -1,15 +1,15 @@
 ---
 id: stack
-title: tctl workflow stack
+title: temporal workflow stack
 sidebar_label: stack
-description: How to query Workflow Executions with --stack-trace using tctl.
+description: How to query Workflow Executions with --stack-trace using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow stack` command queries [Workflow Execution](/concepts/what-is-a-workflow-execution) with `--stack-trace` as the query type.
+The `temporal workflow stack` command queries [Workflow Execution](/concepts/what-is-a-workflow-execution) with `--stack-trace` as the query type.
 
-`tctl workflow stack <modifiers>`
+`temporal workflow stack <modifiers>`
 
 The following modifiers control the behavior of the command.
 

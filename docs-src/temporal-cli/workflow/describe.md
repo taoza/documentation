@@ -1,16 +1,16 @@
 ---
 id: describe
-title: tctl workflow describe
+title: temporal workflow describe
 sidebar_label: describe
-description: How to show information about a Workflow Execution using tctl.
+description: How to show information about a Workflow Execution using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow describe` command shows information about a [Workflow Execution](/concepts/what-is-a-workflow-execution).
+The `temporal workflow describe` command shows information about a [Workflow Execution](/concepts/what-is-a-workflow-execution).
 This information can be used to locate a failed Workflow Execution, for example.
 
-`tctl workflow describe <modifiers>`
+`temporal workflow describe <modifiers>`
 
 The following modifiers control the behavior of the command.
 Always include required modifiers when executing this command.

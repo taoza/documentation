@@ -1,15 +1,15 @@
 ---
 id: terminate
-title: tctl batch terminate
+title: temporal batch terminate
 sidebar_label: terminate
-description: How to terminate a batch job using tctl.
+description: How to terminate a batch job using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl batch terminate` command terminates a batch job.
+The `temporal batch terminate` command terminates a batch job.
 
-`tctl batch terminate --job-id <id> <modifiers>`
+`temporal batch terminate [command options] [arguments...]`
 
 The following modifiers are supported and control the behavior of the command.
 Always include required modifiers when executing this command.

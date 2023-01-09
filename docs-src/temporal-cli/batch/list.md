@@ -1,15 +1,15 @@
 ---
 id: list
-title: tctl batch list
+title: temporal batch list
 sidebar_label: list
-description: How to list batch jobs using tctl.
+description: How to list batch jobs using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl batch list` command lists all batch jobs.
+The `temporal batch list` command lists all batch jobs.
 
-`tctl batch list <modifiers>`
+`temporal batch list [command options]`
 
 The following modifiers are supported and control the behavior of the command.
 Always include required modifiers when executing this command.

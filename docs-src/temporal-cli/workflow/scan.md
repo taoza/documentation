@@ -1,20 +1,20 @@
 ---
 id: scan
-title: tctl workflow scan
+title: temporal workflow scan
 sidebar_label: scan
-description: How to quickly list Workflow Executions without sorting using tctl.
+description: How to quickly list Workflow Executions without sorting using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow scan` command lists [Workflow Executions](/concepts/what-is-a-workflow-execution).
+The `temporal workflow scan` command lists [Workflow Executions](/concepts/what-is-a-workflow-execution).
 
 By default, this command lists a maximum of 2000 Workflow Executions.
 To set the size of a page, use the `--pagesize` option.
 
-See also [`tctl workflow list`](/temporal-cli/workflow#list).
+See also [`temporal workflow list`](/temporal-cli/workflow#list).
 
-`tctl workflow scan <modifiers>`
+`temporal workflow scan <modifiers>`
 
 The following modifiers control the behavior of the command.
 

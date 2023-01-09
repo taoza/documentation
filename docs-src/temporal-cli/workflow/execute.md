@@ -1,17 +1,17 @@
 ---
 id: execute
-title: tctl workflow execute
+title: temporal workflow execute
 sidebar_label: execute
-description: How to start a new Workflow Execution and get Workflow progress using tctl.
+description: How to start a new Workflow Execution and get Workflow progress using Temporal.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl workflow execute` command starts a new [Workflow Execution](/concepts/what-is-a-workflow-execution) and shows its progress until completion.
+The `temporal workflow execute` command starts a new [Workflow Execution](/concepts/what-is-a-workflow-execution) and shows its progress until completion.
 
 The command is entered in the following format:
 
-`tctl workflow execute [modifiers]`
+`temporal workflow execute [modifiers]`
 
 Single quotes (`''`) are used to wrap input as JSON.
 

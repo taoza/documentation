@@ -1,15 +1,15 @@
 ---
 id: update
-title: tctl namespace update
+title: temporal operator namespace update
 sidebar_label: update
-description: How to update a Namespace using tctl.
+description: How to update a Namespace using Temporal CLI.
 tags:
-  - tctl
+  - cli
 ---
 
-The `tctl namespace update` command updates a [Namespace](/concepts/what-is-a-namespace).
+The `temporal operator namespace update` command updates a [Namespace](/concepts/what-is-a-namespace).
 
-`tctl namespace update`
+`temporal operator namespace update`
 
 The following modifiers are supported and control the behavior of the command.
 Always include required modifiers when executing this command.
