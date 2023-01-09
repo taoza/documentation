@@ -21,17 +21,17 @@ The Temporal CLI (tctl) is a command-line tool that you can use to interact with
 It can perform [Namespace](/concepts/what-is-a-namespace) operations (such as register, update, and describe) and [Workflow](/concepts/what-is-a-workflow) operations (such as start
 Workflow, show Workflow History, and Signal Workflow).
 
-- [How to install tctl](/tctl-next/how-to-install-tctl)
-- [Environment variables for tctl](/tctl-next/environment-variables)
+- [How to install tctl](/temporal-cli/how-to-install-tctl)
+- [Environment variables for tctl](/temporal-cli/environment-variables)
 
 ### Available commands
 
-- [tctl activity](/tctl-next/activity/)
-- [tctl batch](/tctl-next/batch/)
-- [tctl cluster](/tctl-next/cluster/)
-- [tctl data-converter](/tctl-next/data-converter/)
-- [tctl namespace](/tctl-next/namespace/)
-- [tctl schedule](/tctl-next/schedule)
-- [tctl search-attribute](/tctl-next/search-attribute)
-- [tctl task-queue](/tctl-next/task-queue/)
-- [tctl workflow](/tctl-next/workflow/)
+- [tctl activity](/temporal-cli/activity/)
+- [tctl batch](/temporal-cli/batch/)
+- [tctl cluster](/temporal-cli/cluster/)
+- [tctl data-converter](/temporal-cli/data-converter/)
+- [tctl namespace](/temporal-cli/namespace/)
+- [tctl schedule](/temporal-cli/schedule)
+- [tctl search-attribute](/temporal-cli/search-attribute)
+- [tctl task-queue](/temporal-cli/task-queue/)
+- [tctl workflow](/temporal-cli/workflow/)

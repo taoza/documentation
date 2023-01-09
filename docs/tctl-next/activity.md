@@ -13,8 +13,8 @@ import TabItem from '@theme/TabItem';
 
 The `tctl activity` commands enable <a class="tdlp" href="/activities#activity-execution">Activity Execution<span class="tdlpiw"><img src="/img/link-preview-icon.svg" alt="Link preview icon" /></span><div class="tdlpc"><p class="tdlppt">What is an Activity Execution?</p><p class="tdlppd">An Activity Execution is the full chain of Activity Task Executions.</p><p class="tdlplm"><a class="tdlplma" href="/activities#activity-execution">Learn more</a></p></div></a> operations.
 
-- [tctl activity complete](/tctl-next/activity#complete)
-- [tctl activity fail](/tctl-next/activity#fail)
+- [tctl activity complete](/temporal-cli/activity#complete)
+- [tctl activity fail](/temporal-cli/activity#fail)
 
 ## complete
 
@@ -25,9 +25,9 @@ The `tctl activity complete` command completes an <a class="tdlp" href="/activit
 The following modifiers are supported and control the behavior of the command.
 Always include required modifiers when executing this command.
 
-- [--activity-id](/tctl-next/modifiers#--activity-id)
-- [--identity](/tctl-next/modifiers#--identity)
-- [--reason](/tctl-next/modifiers#--reason)
+- [--activity-id](/temporal-cli/modifiers#--activity-id)
+- [--identity](/temporal-cli/modifiers#--identity)
+- [--reason](/temporal-cli/modifiers#--reason)
 - [--run-id](/tctl-next/modifiers#--run-id)
 - [--workflow-id](/tctl-next/modifiers#--workflow-id)
 
@@ -46,4 +46,3 @@ Always include required modifiers when executing this command.
 - [--reason](/tctl-next/modifiers#--reason)
 - [--run-id](/tctl-next/modifiers#--run-id)
 - [--workflow-id](/tctl-next/modifiers#--workflow-id)
-

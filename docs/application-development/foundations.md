@@ -1085,15 +1085,12 @@ In TypeScript, the Workflow Type is the Workflow function name and there isn't a
 In the following example, the Workflow Type is the name of the function, `helloWorld`.
 
 <!--SNIPSTART typescript-workflow-type -->
-
 [snippets/src/workflows.ts](https://github.com/temporalio/samples-typescript/blob/master/snippets/src/workflows.ts)
-
 ```ts
 export async function helloWorld(): Promise<string> {
   return '👋 Hello World!';
 }
 ```
-
 <!--SNIPEND-->
 
 </TabItem>
@@ -1434,15 +1431,12 @@ These require special primitives for heartbeating and cancellation. The `shared_
 Activities are _just functions_. The following is an Activity that accepts a string parameter and returns a string.
 
 <!--SNIPSTART typescript-activity-fn -->
-
 [snippets/src/activities.ts](https://github.com/temporalio/samples-typescript/blob/master/snippets/src/activities.ts)
-
 ```ts
 export async function greet(name: string): Promise<string> {
   return `👋 Hello, ${name}!`;
 }
 ```
-
 <!--SNIPEND-->
 
 </TabItem>
@@ -1567,15 +1561,12 @@ async def your_activity(params: YourParams) -> None:
 This Activity takes a single `name` parameter of type `string`.
 
 <!--SNIPSTART typescript-activity-fn -->
-
 [snippets/src/activities.ts](https://github.com/temporalio/samples-typescript/blob/master/snippets/src/activities.ts)
-
 ```ts
 export async function greet(name: string): Promise<string> {
   return `👋 Hello, ${name}!`;
 }
 ```
-
 <!--SNIPEND-->
 
 </TabItem>
@@ -1795,9 +1786,7 @@ You can customize the name of the Activity when you register it with the Worker.
 In the following example, the Activity Name is `activityFoo`.
 
 <!--SNIPSTART typescript-custom-activity-type -->
-
 [snippets/src/worker-activity-type-custom.ts](https://github.com/temporalio/samples-typescript/blob/master/snippets/src/worker-activity-type-custom.ts)
-
 ```ts
 import { Worker } from '@temporalio/worker';
 import { greet } from './activities';
@@ -1814,7 +1803,6 @@ async function run() {
   await worker.run();
 }
 ```
-
 <!--SNIPEND-->
 
 </TabItem>
@@ -2615,7 +2603,6 @@ Create a Worker with `Worker.create()` (which establishes the initial gRPC conne
 Below is an example of starting a Worker that polls the Task Queue named `tutorial`.
 
 <!--SNIPSTART typescript-hello-worker {"enable_source_link": false}-->
-
 ```ts
 import { Worker } from '@temporalio/worker';
 import * as activities from './activities';
@@ -2643,7 +2630,6 @@ run().catch((err) => {
   process.exit(1);
 });
 ```
-
 <!--SNIPEND-->
 
 `taskQueue` is the only required option, but you will also use `workflowsPath` and `activities` to register Workflows and Activities with the Worker.
@@ -2871,9 +2857,7 @@ worker = Worker(
 In development, use [`workflowsPath`](https://typescript.temporal.io/api/interfaces/worker.WorkerOptions/#workflowspath):
 
 <!--SNIPSTART typescript-worker-create -->
-
 [snippets/src/worker.ts](https://github.com/temporalio/samples-typescript/blob/master/snippets/src/worker.ts)
-
 ```ts
 import { Worker } from '@temporalio/worker';
 import * as activities from './activities';
@@ -2888,7 +2872,6 @@ async function run() {
   await worker.run();
 }
 ```
-
 <!--SNIPEND-->
 
 In this snippet, the Worker bundles the Workflow code at runtime.
@@ -2896,9 +2879,7 @@ In this snippet, the Worker bundles the Workflow code at runtime.
 In production, you can improve your Worker's startup time by bundling in advance: as part of your production build, call [`bundleWorkflowCode`](https://legacy-documentation-sdks.temporal.io/typescript/workers#prebuilt-workflow-bundles):
 
 <!--SNIPSTART typescript-bundle-workflow -->
-
 [production/src/scripts/build-workflow-bundle.ts](https://github.com/temporalio/samples-typescript/blob/master/production/src/scripts/build-workflow-bundle.ts)
-
 ```ts
 import { bundleWorkflowCode } from '@temporalio/worker';
 import { writeFile } from 'fs/promises';
@@ -2914,23 +2895,20 @@ async function bundle() {
   console.log(`Bundle written to ${codePath}`);
 }
 ```
-
 <!--SNIPEND-->
 
 Then the bundle can be passed to the Worker:
 
 <!--SNIPSTART typescript-production-worker-->
-
 [production/src/worker.ts](https://github.com/temporalio/samples-typescript/blob/master/production/src/worker.ts)
-
 ```ts
 const workflowOption = () =>
   process.env.NODE_ENV === 'production'
     ? {
-      workflowBundle: {
-        codePath: require.resolve('../workflow-bundle.js'),
-      },
-    }
+        workflowBundle: {
+          codePath: require.resolve('../workflow-bundle.js'),
+        },
+      }
     : { workflowsPath: require.resolve('./workflows') };
 
 async function run() {
@@ -2943,7 +2921,6 @@ async function run() {
   await worker.run();
 }
 ```
-
 <!--SNIPEND-->
 
 </TabItem>

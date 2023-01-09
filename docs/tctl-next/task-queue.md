@@ -15,8 +15,8 @@ The `tctl task-queue` commands enable <a class="tdlp" href="/tasks#task-queue">T
 
 Alias: `tq`
 
-- [tctl task-queue describe](/tctl-next/task-queue#describe)
-- [tctl task-queue list-partition](/tctl-next/task-queue#list-partition)
+- [tctl task-queue describe](/temporal-cli/task-queue#describe)
+- [tctl task-queue list-partition](/temporal-cli/task-queue#list-partition)
 
 ## describe
 
@@ -32,12 +32,12 @@ Once it has been 5 minutes since the last poll request, the Worker will no longe
 The following modifiers are supported and control the behavior of the command.
 `--task-queue` is required.
 
-- [--fields](/tctl-next/modifiers#--fields)
-- [--namespace](/tctl-next/modifiers#--namespace)
-- [--output](/tctl-next/modifiers#--output)
-- [--task-queue](/tctl-next/modifiers#--task-queue)
-- [--task-queue-type](/tctl-next/modifiers#--task-queue-type)
-- [--time-format](/tctl-next/modifiers#--time-format)
+- [--fields](/temporal-cli/modifiers#--fields)
+- [--namespace](/temporal-cli/modifiers#--namespace)
+- [--output](/temporal-cli/modifiers#--output)
+- [--task-queue](/temporal-cli/modifiers#--task-queue)
+- [--task-queue-type](/temporal-cli/modifiers#--task-queue-type)
+- [--time-format](/temporal-cli/modifiers#--time-format)
 
 ## list-partition
 
@@ -48,7 +48,6 @@ The `tctl task-queue list-partition` command lists the partitions of a <a class=
 The following modifiers are supported and control the behavior of the command.
 Always include required modifiers when executing this command.
 
-- [--namespace](/tctl-next/modifiers#--namespace)
-- [--output](/tctl-next/modifiers#--output)
-- [--task-queue](/tctl-next/modifiers#--task-queue)
-
+- [--namespace](/temporal-cli/modifiers#--namespace)
+- [--output](/temporal-cli/modifiers#--output)
+- [--task-queue](/temporal-cli/modifiers#--task-queue)

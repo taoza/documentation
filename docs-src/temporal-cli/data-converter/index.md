@@ -1,0 +1,12 @@
+---
+id: index
+title: tctl data-converter
+sidebar_label: data-converter
+description: How to operate custom Data Converters using tctl.
+tags:
+  - tctl
+---
+
+The `tctl data-converter` command enables custom [Data Converter](/concepts/what-is-a-data-converter) operations.
+
+- [tctl data-converter web](/temporal-cli/data-converter#web)
