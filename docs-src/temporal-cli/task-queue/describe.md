@@ -1,15 +1,15 @@
 ---
 id: describe
-title: tctl task-queue describe
+title: temporal task-queue describe
 sidebar_label: describe
-description: How to describe the Workers that have recently polled on a Task Queue using tctl.
+description: How to describe the Workers that have recently polled on a Task Queue using Temporal CLI.
 tags:
-  - tctl
+  - temporal
 ---
 
-The `tctl task-queue describe` command describes the poller information of a [Task Queue](/concepts/what-is-a-task-queue).
+The `temporal task-queue describe` command describes the poller information of a [Task Queue](/concepts/what-is-a-task-queue).
 
-`tctl task-queue describe <modifiers>`
+`temporal task-queue describe <modifiers>`
 
 The Server records the last time a Worker sent a poll request.
 Poll requests can last up to a minute, so a `LastAccessTime` less than a minute ago is normal.
